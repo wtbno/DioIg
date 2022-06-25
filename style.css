@@ -2,7 +2,7 @@ body {
   display: flex;
   width: 100%;
   height: 100vh;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 .root {
@@ -13,11 +13,20 @@ body {
   align-items: center;
 }
 
+.mainLogin {
+  border: solid 1px #0095f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
 .loginBox {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 28%;
+  width: 95%;
   height: 55%;
   background-color: #fff;
   border: solid 1px #dbdbdb;
@@ -31,30 +40,50 @@ body {
   background-color: #0095f6;
   color: #ffffff;
   border-radius: 5px;
-
   font-size: 14px;
   border: none;
 }
 
 .CelPhone {
-  width: 80%;
+  width: 60%;
 }
 
 .perfilPic {
   width: 150px;
   height: 150px;
+  border-radius: 90px;
 }
 
 .igLogo {
   width: 150px;
-  height: 150px;
 }
 
 .apple {
   width: 150px;
-  height: 90px;
 }
 .google {
   width: 150px;
-  height: 90px;
+}
+
+.accountBox {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 95%;
+  height: 10%;
+  background-color: #fff;
+  border: solid 1px #dbdbdb;
+  flex-direction: column;
+  margin-left: 3%;
+}
+
+.imgBox {
+  max-width: 95%;
+  display: flex;
+  margin-top: 10px;
+}
+
+.removeAcc{
+  color: #0095f6;
 }
