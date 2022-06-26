@@ -14,28 +14,28 @@ body {
 }
 
 .mainLogin {
-  border: solid 1px #0095f6;
+  
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 100vh;
+  width: 40%;
 }
 
 .loginBox {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 95%;
+  width: 90%;
   height: 55%;
   background-color: #fff;
   border: solid 1px #dbdbdb;
   flex-direction: column;
-  margin-left: 3%;
 }
 
 .btnLogin {
-  width: 50%;
+  width: 70%;
   height: 5vh;
   background-color: #0095f6;
   color: #ffffff;
@@ -45,7 +45,7 @@ body {
 }
 
 .CelPhone {
-  width: 60%;
+  width: 50%;
 }
 
 .perfilPic {
@@ -66,24 +66,68 @@ body {
 }
 
 .accountBox {
-  margin-top: 10px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-evenly;
-  width: 95%;
-  height: 10%;
-  background-color: #fff;
-  border: solid 1px #dbdbdb;
   flex-direction: column;
-  margin-left: 3%;
+  background-color: #ffffff;
+  width: 90%;
+  padding: 1.3rem 0;
+  border: 1px solid lightgray;
+  margin-top: 10px;
 }
 
 .imgBox {
   max-width: 95%;
   display: flex;
   margin-top: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
-.removeAcc{
+.removeAcc {
   color: #0095f6;
+}
+
+.getApp {
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1.3rem 0;
+}
+
+@media (max-width: 1024px) {
+  .root {
+    width: 90%;
+  }
+}
+
+@media (max-width: 650px) {
+  body {
+    background-color: #ffffff;
+  }
+
+  .root {
+    width: 100%;
+  }
+
+  .CelPhone {
+    display: none;
+  }
+
+  .loginBox {
+    width: 100%;
+  }
+
+  .accountBox {
+    border: 1px solid transparent;
+  }
+
+  .mainLogin{
+    display: flex;
+    width: 70%;
+  }
 }
